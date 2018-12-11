@@ -1,0 +1,21 @@
+{
+  "author": "",
+  "dependencies": [{
+  	"name": "Dimitri-monit", "version_requirement": ">= 0.1.0"
+  },{
+  	"name": "Dimitri-rsyslog", "version_requirement": ">= 0.1.0"
+  },{
+  	"name": "Dimitri-storage", "version_requirement": ">= 0.1.0"
+  },{
+  	"name": "Dimitri-apt_source_list", "version_requirement": ">= 0.1.0"
+  }],
+  "license": "",
+  "name": "Dimitri-bind",
+  "operatingsystem_support": [],
+  "project_page": "",
+  "requirements": [],
+  "source": "",
+  "summary": "",
+  "tags": [],
+  "version": "0.1.0"
+}

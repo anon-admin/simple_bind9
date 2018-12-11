@@ -1,0 +1,34 @@
+//
+// Do any local configuration here
+//
+// Manage the file logs
+include "/etc/bind/named.conf.log";
+
+zone "<%= @local_domain %>" {
+    type master;
+    file "/var/lib/bind/db.<%= @local_domain %>";
+    notify no;
+    allow-update {
+        key <%= @rndckey %>_rndc-key;
+    };
+};
+
+zone "<%= @in_addr_arpa %>.in-addr.arpa" {
+    type master;
+    file "/var/lib/bind/db.<%= @local_domain %>.inv";
+    notify no;
+    allow-update {
+        key <%= @rndckey %>_rndc-key;
+    };
+};
+
+// zone "<%= @external_domain %>" {
+//     type master;
+//     file "/var/lib/bind/db.<%= @external_domain %>";
+//     notify no;
+// };
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+

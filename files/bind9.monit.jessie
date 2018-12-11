@@ -1,0 +1,4 @@
+check process named with pidfile /var/run/named/named.pid
+   start program = "/bin/systemctl start bind9"
+   stop program  = "/bin/systemctl stop bind9"
+   

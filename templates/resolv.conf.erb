@@ -1,0 +1,6 @@
+nameserver <%= @nameserver %>
+<% if @domain != "" -%>
+domain <%= @domain %>
+<% end -%>
+<% if @searches != [] -%><% @searches.flatten.each do |search| -%>search <%= search %>
+<% end -%><% end -%>
